@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/start.unity
+    guid: 06a8ab9a2933867409522a1e62ae3866
+  - enabled: 1
+    path: Assets/Scenes/red_button.unity
+    guid: 49488015755d9494aa133fd81566bc0a
+  - enabled: 1
+    path: Assets/Scenes/road.unity
+    guid: 09713e669ea823242b6ef3f9b8826702
+  - enabled: 1
+    path: Assets/Scenes/fail.unity
+    guid: 0e2880d62fd516a46bb6326f609bdbbd
+  m_configObjects: {}
