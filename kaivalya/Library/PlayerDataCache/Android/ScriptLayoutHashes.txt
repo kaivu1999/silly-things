@@ -6,6 +6,8 @@ Assets/Scenes/start.unity
 Assets/Scenes/red_button.unity
 Assets/Scenes/road.unity
 Assets/Scenes/fail.unity
+Assets/Scenes/in_between_scene.unity
+Assets/Scenes/lights.unity
 SceneListEnd?
 984dcc0ba3707b7691fbdca8ff508d28 Unity.TextMeshPro.dll:TMPro.TMP_SelectionCaret
 b71b7ba2db488c47b6f5a882c27b6502 Assembly-CSharp.dll:.ambulance_move
@@ -89,6 +91,7 @@ fc108ce7d98c40ac0907e8ca7f500c76 UnityEngine.UI.dll:UnityEngine.UI.Text
 0fd6822f6177297bd0eb4d83cc7a9030 UnityEngine.UI.dll:UnityEngine.UI.ToggleGroup
 abf1930d8126d0b2e00e9449129a0190 UnityEngine.UI.dll:UnityEngine.EventSystems.TouchInputModule
 64e54c0cbb0177c5ea26f340efb9ff85 UnityEngine.UI.dll:UnityEngine.UI.VerticalLayoutGroup
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.ui_manage
 beed6b7cd5b2025639c207f8ad810bcc Assembly-CSharp.dll:.AcceleratorInput
 71bb6a6b6c8f052f948db64c7dd3ca4f UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationPlayableAsset
 06f0fef534ca4c1d6064fd77a26bf722 UnityEngine.Timeline.dll:UnityEngine.Timeline.ActivationTrack
@@ -118,12 +121,15 @@ ad9173d3a69d99153f38ed4b62226129 UnityEngine.Networking.dll:UnityEngine.Networki
 9b895dcabbc1faf095c000c32d471fd0 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformChild
 5887ef1bc706b22b773d253fd443ceef UnityEngine.Networking.dll:UnityEngine.Networking.NetworkTransformVisualizer
 d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
+1d835080d22f97029b1b0d39392778e1 Assembly-CSharp.dll:.RandomSample
 303ad70ce203ad874efe2965d0fbcff9 Unity.Analytics.Tracker.dll:UnityEngine.Analytics.AnalyticsEventTracker
 7fb9de8dcf73854b6b328eca1f7a6e6d Unity.Analytics.Tracker.dll:UnityEngine.Analytics.AnalyticsTracker
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.uiManager
 afc5b93a7b192de2dcb3832fe35a5c7e Assembly-CSharp.dll:.track_scroll
 94017dcc9f00fe671ea7dc427b4da011 Unity.TextMeshPro.dll:TMPro.TMP_SpriteAsset
 a318a82d5abde553e75543c7b3aba918 XiaomiSupport.dll:AppStoresSupport.AppStoreSettings
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.what_next
+71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.share_text_script
 b3ab2106268377ffe25dd18ac23dca28 Unity.TextMeshPro.dll:TMPro.TMP_Asset
 71bb6a6b6c8f052f948db64c7dd3ca4f Unity.Analytics.Editor.dll:UnityEditor.Analytics.AnalyticsEventTrackerEditor
 afc5b93a7b192de2dcb3832fe35a5c7e Assembly-CSharp.dll:.trackMove
@@ -168,10 +174,12 @@ fb6a1ea36b4f6ef5948d283d93760765 UnityEngine.GoogleAudioSpatializer.dll:UnityEng
 5b0391b7e3d9ea9db6c0a8fbd0ca23f6 UnityEngine.GoogleAudioSpatializer.dll:UnityEngine.Experimental.Audio.Google.GvrAudioSourceExtension
 a4f0a4f62100f1a4fb5cbe0e00dde83f Unity.TextMeshPro.dll:TMPro.TextMeshProUGUI
 5fc094978ce3e3591a7500ed380d854a Unity.Analytics.DataPrivacy.dll:UnityEngine.Analytics.DataPrivacyButton
+94dab6d2202c30e6d2f85ef7eab000e1 Assembly-CSharp.dll:.share
 d251bf88db6c95a6b1aa0b69298da9ef UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 58f04323a742657395d42ce764eaa924 Assembly-CSharp.dll:.ambulance_spawner
 afc5b93a7b192de2dcb3832fe35a5c7e Assembly-CSharp.dll:.bg_scroll
 d791aa6007fa3640be1164ea75bb087d Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
+7feaaf5389d9db9bbec78da5f7715f1a Assembly-CSharp.dll:.audioManager
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.uimanage_fail_screen
 c6666661329916e218bee7f5e79e60f5 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 3165968ba45c74472d279ba04455fccb Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
@@ -179,5 +187,3 @@ c6666661329916e218bee7f5e79e60f5 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.Destroyer
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.click
 71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.ui_manager
-94dab6d2202c30e6d2f85ef7eab000e1 Assembly-CSharp.dll:.share
-71bb6a6b6c8f052f948db64c7dd3ca4f Assembly-CSharp.dll:.share_text_script

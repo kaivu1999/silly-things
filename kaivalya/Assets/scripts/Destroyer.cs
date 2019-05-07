@@ -21,9 +21,9 @@ public class Destroyer : MonoBehaviour
         if (collision.gameObject.tag == "Ambulance")
         {
             Destroy(collision.gameObject);
-            Application.LoadLevel("red_button");
             stats.Lives_saved += 1;
             stats.Points += 1;
+            stats.random_scene(true);
 
         }
        

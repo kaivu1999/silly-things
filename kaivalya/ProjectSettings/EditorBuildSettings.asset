@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/fail.unity
     guid: 0e2880d62fd516a46bb6326f609bdbbd
+  - enabled: 1
+    path: Assets/Scenes/in_between_scene.unity
+    guid: 564a89acd09905c4a8ccfb5b1d933163
+  - enabled: 1
+    path: Assets/Scenes/lights.unity
+    guid: 5be64ce41a3030149bb1e1a517812321
   m_configObjects: {}

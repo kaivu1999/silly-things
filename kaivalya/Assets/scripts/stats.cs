@@ -6,7 +6,20 @@ using UnityEngine;
 public static class stats
 {
     private static int electricity_saved, water_saved, lives_saved, points, lives;
-
+    public static bool result;
+    public static int levels = 1 ;
+    public static string prev_level = "road";
+    public static int Levels
+    {
+        get
+        {
+            return levels;
+        }
+        set
+        {
+            levels = value;
+        }
+    }
     public static int Lives_saved
     {
         get
@@ -73,6 +86,7 @@ public static class stats
 
     public static void clear()
     {
+        stats.result = true;
         stats.lives = 3;
         stats.Lives_saved = 0;
         stats.Water_saved = 0;
@@ -80,16 +94,58 @@ public static class stats
         stats.Points = 0;
     }
 
-   public static string[] scenes = new string[] { "start", "road", "red_button", "water", "electricity" };
-    
-    public static void random_scene(int curr_level)
+   public static string[] scenes = new string[] { "start", "road", "lights" , "red_button", "electricity" };
+
+    public static void what_next()
     {
-        int level = (int)Random.Range(1,3);
-        while (level == curr_level)
+        int level = (int)Random.Range(1, 4);
+        while (level>3 || level <1)
         {
-            level = (int)Random.Range(1, 3);
+            level = (int)Random.Range(1, 4);
         }
+        if(prev_level == "red_button")
+        {
+            while((level > 2 || level < 1))
+            {
+                level = (int)Random.Range(1, 3); 
+            }
+        }
+        stats.levels += 1;
+        prev_level = scenes[level];
         Application.LoadLevel(scenes[level]);
+
     }
+
+    public static void random_scene(bool status)
+    {
+        if(status == true)
+        {
+            stats.result = true;
+        }
+        else
+        {
+            stats.result = false;
+            Handheld.Vibrate();
+            stats.lives -= 1;
+        }
+
+        if(stats.lives <= 0)
+        {
+            Application.LoadLevel("fail");
+        }
+        else
+        {
+            Application.LoadLevel("in_between_scene");
+        }
+
+        //int level = (int)Random.Range(1,3);
+        //while (level == curr_level)
+        //{
+          //  level = (int)Random.Range(1, 3);
+        //}
+        //Application.LoadLevel(scenes[level]);
+    }
+
+ 
    
 }

@@ -17,8 +17,10 @@ public class ui_manager : MonoBehaviour
     }
     public void fail()
     {
-        stats.Lives -= 1;
-        Application.LoadLevel("road");
+        stats.random_scene(false);
+        // .Lives -= 1;
+        // Handheld.Vibrate();
+        // Application.LoadLevel("road");
     }
     public void Pause()
     {
@@ -31,9 +33,4 @@ public class ui_manager : MonoBehaviour
             Time.timeScale = 1;
         }
     }
-    public void OnGUI()
-    {
-        if (GUI.Button(new Rect(0, 10, 100, 32), "Vibrate!"))
-            Handheld.Vibrate();
-    }
-}
+}   

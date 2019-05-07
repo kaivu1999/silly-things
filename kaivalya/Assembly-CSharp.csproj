@@ -61,10 +61,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\bg_scroll.cs" />
+    <Compile Include="Assets\Faces\Sample\RandomSample.cs" />
     <Compile Include="Assets\main_red.cs" />
     <Compile Include="Assets\scripts\AcceleratorInput.cs" />
     <Compile Include="Assets\scripts\ambulance_move.cs" />
     <Compile Include="Assets\scripts\ambulance_spawner.cs" />
+    <Compile Include="Assets\scripts\audioManager.cs" />
     <Compile Include="Assets\scripts\click.cs" />
     <Compile Include="Assets\scripts\coin_stuff.cs" />
     <Compile Include="Assets\scripts\Destroyer.cs" />
@@ -78,9 +80,11 @@
     <Compile Include="Assets\text_script.cs" />
     <Compile Include="Assets\text_script_all.cs" />
     <Compile Include="Assets\track_scroll.cs" />
+    <Compile Include="Assets\ui_manage.cs" />
     <Compile Include="Assets\ui_manager.cs" />
     <Compile Include="Assets\uimanage_fail_screen.cs" />
     <Compile Include="Assets\uiManager.cs" />
+    <Compile Include="Assets\what_next.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />

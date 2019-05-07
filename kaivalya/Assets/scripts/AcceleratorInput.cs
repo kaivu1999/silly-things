@@ -8,7 +8,7 @@ public class AcceleratorInput : MonoBehaviour
     public float sc_right_bd = 2.0f;
     public float sc_left_bd = -2.0f;
 
-    public float speed = 1.0f; 
+    public float speed = 1.3f; 
 
     private Rigidbody2D rb;
     // Start is called before the first frame update
@@ -49,9 +49,7 @@ public class AcceleratorInput : MonoBehaviour
         if(col.gameObject.tag == "Ambulance")
         {
             Destroy(gameObject);
-            Application.LoadLevel("red_button");
-            stats.Lives -= 1;
-           // Destroy(col.gameObject);
+            stats.random_scene(false);
         }
     }
 

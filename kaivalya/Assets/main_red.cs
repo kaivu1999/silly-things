@@ -16,7 +16,8 @@ public class main_red : MonoBehaviour
     {
         if ((Time.time - startT) > 4)
         {
-            fail_level();
+            stats.random_scene(true);
+            //fail_level();
         }
     }
 

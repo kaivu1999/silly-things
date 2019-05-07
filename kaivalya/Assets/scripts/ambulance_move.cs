@@ -30,7 +30,13 @@ public class ambulance_move : MonoBehaviour
         }
         else
         {
-            transform.Translate(new Vector3(0, 1, 0) * speed * Time.deltaTime);
+
+            float speed_factor_level = (stats.levels + 10) / 10;
+            if ( speed_factor_level > 2)
+            {
+                speed_factor_level = 2; 
+            }
+            transform.Translate(new Vector3(0, 1, 0) * speed * Time.deltaTime * speed_factor_level );
         }
 
     }
